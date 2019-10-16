@@ -1,6 +1,6 @@
-# Hidden Markov Model, HMM
+#  Hidden Markov Model, HMM
 
-##Problem
+## Problem
  对于单只股票数据，我们每日可以观测到的值可以是涨、跌，不涨不跌（相对于昨天的
 收盘价）三种情况。这⾥将观测的涨跌平编码为0,1,2 三种取值（0：跌，1：涨，2：平）。
 我们假设股票的涨跌由内在的隐变量驱动（这是⼀个⼗分简化的假设），即⽜市或熊市。
@@ -14,7 +14,7 @@
   output: path
 
 这里，a 是状态转移矩阵(transition matrix), b 是发射矩阵(emission matrix)，o 是观
-测到的序列（例如[0; 1; 1; 1; 2; 1; 0; 1; 0],  是初始分布initial probabilities）输出是最有可
+测到的序列（例如[0; 1; 1; 1; 2; 1; 0; 1; 0], pi 是初始分布initial probabilities）输出是最有可
 能的隐变量序列（0,1 序列）
 
 2. `HMMfwd`
